@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <title>Crystal Collector Game</title>
+</head>
+
+<body>
+    <!-- main heading area with game title -->
+    <div class="jumbotron">
+        <h1>Crystal Collector Game</h1>
+        <p id="jumbotron-p"></p>
+    </div>
+    
+    <!-- container that holds all the mini-panels for the game. -->
+    <div class="container">
+        <div class="row panel-row">
+            <div class="col-md-2">
+                
+                <!-- Two side panels that show the random number and the number of crystals collected. -->
+                <div class="row" id="side-1">
+                    <h3>Crystals to Collect:</h3>
+                    <p>
+                        <span id="random-number"></span>
+                    </p>
+                </div>
+
+                <div class="row" id="side-2">
+                    <h3>Number Collected:</h3>
+                    <p>
+                        <span id="number-collected"></span>
+                    </p>
+                </div>
+            </div>
+            
+            <!-- middle panel that includes the instructions -->
+            <div class="col-md-8">
+                <div class="row" id="middle-panel">
+                    <div>
+                        <h1>Instructions:</h1>
+                        <ol>
+                            <li>At the start of the game, you'll see a random number in the
+                                <b>Crystals to Collect</b> section.</li>
+                            <li>You'll collect crystals by clicking on the crystal kaleidoscopes below. The value of each crystal
+                                is hidden from you until you click on it.
+                            </li>
+                            <li>By clicking on a crystal you will add a specific amount of points to your
+                                <b>Number Collected</b> score.
+                            </li>
+                            <li>To win the game, match your <b>Number Collected</b> to the random <b>Crystals to Collect</b> number. <u>But be careful!</u> You lose the game
+                                if your total number of crystals collected is higher than the random number.</li>
+                            <li> Each time a new game starts, a new value will be assigned to each crystal.</li>
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- button panel that includes all the crystal images -->
+                <div class="col-md-12">
+                    <div class="row" id="button-panel">
+                        <div class="col-md-3">
+                            <button class="crystals">
+                                <img src="assets/images/jewel-1.png" id="button1" class="button-image" value="#" alt="jewel button 1">
+                            </button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="crystals">
+                                <img src="assets/images/jewel-2.png" id="button2" class="button-image" value="#" alt="jewel button 2">
+                            </button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="crystals">
+                                <img src="assets/images/jewel-3.png" id="button3" class="button-image" value="#" alt="jewel button 3">
+                            </button>
+                        </div>
+                        <div class="col-md-3">
+                            <button class="crystals">
+                                <img src="assets/images/jewel-4.png" id="button4" class="button-image" value="#" alt="jewel button 4">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Two right side panels that tally the wins and losses. -->
+            <div class="col-md-2">
+                <div class="row" id="side-1">
+                    <h3> Wins: </h3>
+                    <p id="wins"></p>
+                </div>
+
+                <div class="row" id="side-2">
+                    <h3>Losses:</h3>
+                    <p id="losses"></p>
+                </div>
+
+            </div>
+            <!-- close the container div. -->
+        </div>
+        <!-- create a copyright footer -->
+        <footer>
+            Copyright &#169; Natalie Roberts 2017
+        </footer>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
