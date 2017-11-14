@@ -4,24 +4,19 @@ body {
     background-size: cover;
 }
 
-h1, h2
-{
+h1,
+h2 {
     font-family: 'Shadows Into Light', cursive;
     font-size: 28px;
 }
-
 
 h3 {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
 }
 
-#jumbotron-p {
-    font-family: 'Lato', sans-serif;
-    font-size: 36px;
-}
-
-p, span {
+p,
+span {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     text-align: center;
@@ -43,31 +38,24 @@ ol {
     font-family: 'Shadows Into Light', cursive;
 }
 
-.crystals {
+.crystal-image {
     background: none;
-    width: 130px;
-    height: 130px;
+    width: 125px;
+    height: 125px;
     border-radius: 50%;
-    border-color: none;
-    padding: 0px;
-    margin-left: 10px;
 }
 
-.button-image {
-    background: none;
-    border-color: none;
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
+.button-panel {
     padding: 0px;
-    margin-left: 5px;
 }
 
+#button-panel1 {
+    float: right;
+}
 
-/* #button-panel {
-        align-content: center;
-        margin-left: 5px;
-    } */
+#button-panel2 {
+    float: left;
+}
 
 #middle-panel {
     border-radius: 25px;
