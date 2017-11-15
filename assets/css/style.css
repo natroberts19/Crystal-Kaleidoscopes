@@ -40,8 +40,6 @@ ol {
 
 .crystal-image {
     background: none;
-    /* width: 125px;
-    height: 125px; */
     max-width: 100%;
     height: auto;
     border-radius: 50%;
@@ -51,14 +49,6 @@ ol {
     padding: 0px;
     text-align: center;
 }
-/* 
-#button-panel1 {
-    float: right;
-}
-
-#button-panel2 {
-    float: left;
-} */
 
 #middle-panel {
     border-radius: 25px;
