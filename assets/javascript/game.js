@@ -39,7 +39,7 @@ $(document).ready(function () {
     numberCollected += butt1;
     console.log("New Score: " + numberCollected);
     // 3. Write the result to the Number Collected <div>
-    $("#number-collected").html(numberCollected);
+    $("#number-collected").html("<b>" + numberCollected + "</b>");
     // 4. Check for the total after each click.
     checkTotal();
 
@@ -50,7 +50,7 @@ $(document).ready(function () {
   $("#crystal2").on("click", function () {
     numberCollected += butt2;
     console.log("New Score: " + numberCollected);
-    $("#number-collected").html(numberCollected);
+    $("#number-collected").html("<b>" + numberCollected + "</b>");
     checkTotal();
   });
 
@@ -58,7 +58,7 @@ $(document).ready(function () {
   $("#crystal3").on("click", function () {
     numberCollected += butt3;
     console.log("New Score: " + numberCollected);
-    $("#number-collected").html(numberCollected);
+    $("#number-collected").html("<b>" + numberCollected + "</b>");
     checkTotal();
   });
 
@@ -66,7 +66,7 @@ $(document).ready(function () {
   $("#crystal4").on("click", function () {
     numberCollected += butt4;
     console.log("New Score: " + numberCollected);
-    $("#number-collected").html(numberCollected);
+    $("#number-collected").html("<b>" + numberCollected + "</b>");
     checkTotal();
   });
 
@@ -79,10 +79,11 @@ $(document).ready(function () {
     if (numberCollected === randomNumber) {
       console.log("Congrats!");
       wins++;
-      $("#wins").html(wins);
+      $("#wins").html("<b>" + wins + "</b>");
       $("#youWon").html("<b>Congrats, you won!</b>");
-      
+
       setTimeout(fade_out, 1500);
+
       function fade_out() {
         $("#youWon").fadeOut().empty();
       }
@@ -94,14 +95,15 @@ $(document).ready(function () {
     if (numberCollected > randomNumber) {
       console.log("Sorry!");
       losses++;
-      $("#losses").html(losses);
+      $("#losses").html("<b>" + losses + "</b>");
       $("#youLost").html("<b>Sorry, try again!</b>");
-      
+
       setTimeout(fade_out, 1500);
+
       function fade_out() {
         $("#youLost").fadeOut().empty();
       }
-      resetGame();   
+      resetGame();
     }
   }
 

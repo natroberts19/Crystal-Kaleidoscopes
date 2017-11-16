@@ -62,7 +62,7 @@ ol {
 }
 
 #side-1 {
-    margin: 10px 5px 10px 5px;
+    margin: 10px 5px 15px 5px;
     border-radius: 25px;
     background: lightgray;
     padding: 0px 10px 10px 10px;
@@ -72,7 +72,7 @@ ol {
 }
 
 #side-2 {
-    margin: 10px 5px 10px 5px;
+    margin: 10px 5px 15px 5px;
     border-radius: 25px;
     background: rgb(156, 209, 156);
     padding: 0px 10px 10px 10px;
@@ -82,7 +82,7 @@ ol {
 }
 
 #side-2-message {
-    margin: 10px 5px 10px 5px;
+    margin: 5px 5px 10px 5px;
     border-radius: 25px;
     padding: 0px 10px 10px 10px;
     width: auto;
@@ -99,7 +99,7 @@ ol {
 #youLost {
     color: red;
     font-weight: strong;
-    font-size: 24px;   
+    font-size: 24px;
 }
 
 footer {
